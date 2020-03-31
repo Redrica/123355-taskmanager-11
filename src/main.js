@@ -1,6 +1,8 @@
 'use strict';
 
 const TASK_QUANTITY = 3;
+const mainElement = document.querySelector(`.main`);
+const headerElement = mainElement.querySelector(`.main__control`);
 
 const createMenuTemplate = () => {
   return (
@@ -377,9 +379,6 @@ const createLoadButtonTemplate = () => {
 const render = (container, template, place = `beforeend`) => {
   container.insertAdjacentHTML(place, template);
 };
-
-const mainElement = document.querySelector(`.main`);
-const headerElement = mainElement.querySelector(`.main__control`);
 
 render(headerElement, createMenuTemplate());
 render(mainElement, createFiltersTemplate());
