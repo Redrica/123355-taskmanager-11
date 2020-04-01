@@ -7,4 +7,13 @@
 *.woff binary
 *.woff2 binary
 
+# Вспомогательные
+*.log*
 node_modules/
+
+# Файлы и папки операционной системы
+.DS_Store
+Thumbs.db
+
+# Файлы редактора
+.idea
